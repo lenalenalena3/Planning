@@ -7,12 +7,10 @@ import static org.junit.Assert.*;
 
 public class ReadParamTest {
 
-    private ArrayList<TestParam> i_params = new ArrayList<TestParam>();
+    public ArrayList<TestParam> i_params = new ArrayList<TestParam>();
 
     @Before
     public void setUp() throws Exception {
-
-        TestParam i_param = new TestParam();
 
         i_params.add(new TestParam(MyEnum.EMonth.JANUARY.toString(), 1, MyEnum.ETip.PLUS.toString(), "", "зарплата", 30000));
         i_params.add(new TestParam(MyEnum.EMonth.JANUARY.toString(), 25, MyEnum.ETip.PLUS.toString(), "", "аванс", 20000));
@@ -31,10 +29,6 @@ public class ReadParamTest {
                     i_params.get(i).getDetail() + " " + i_params.get(i).getName() + " " + i_params.get(i).getSum());
         }
         System.out.println("------------------------------------------------------------------");
-    }
-
-    @Test
-    public void getCurrentYear() {
     }
 
     @Test
