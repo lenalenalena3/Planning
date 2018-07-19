@@ -153,24 +153,28 @@ public class ConvertToTest {
         String expected = MyEnum.EDetail.FOOD.toString();
         assertEquals(actual, expected);
     }
+
     @Test
     public void convertToEDetailPay() {
         String actual = ConvertTo.convertToEDetail("Платежи");
         String expected = MyEnum.EDetail.PAYMENT.toString();
         assertEquals(actual, expected);
     }
+
     @Test
     public void convertToEDetailNew() {
         String actual = ConvertTo.convertToEDetail("Прочее");
         String expected = MyEnum.EDetail.OTHER.toString();
         assertEquals(actual, expected);
     }
+
     @Test
     public void convertToEDetailOther() {
         String actual = ConvertTo.convertToEDetail("Другое");
         String expected = MyEnum.EDetail.UNDEF.toString();
         assertEquals(actual, expected);
     }
+
     @Test
     public void convertToEDetail0() {
         String actual = ConvertTo.convertToEDetail("");
